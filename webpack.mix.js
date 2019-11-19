@@ -11,5 +11,10 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
+mix.js([
+        'resources/js/app.js',
+        'resources/js/logout.js',
+        'resources/js/courses.js',
+        'resources/js/changeimg.js',
+   ], 'public/js')
     .sass('resources/sass/app.scss', 'public/css');
